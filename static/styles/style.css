@@ -6,118 +6,119 @@ background-color: #ffd58a;
 background-color: #008A88; */
 
 html {
-    font-family: 'Permanent Marker', cursive;
-    padding: 10px;
-    margin: 10% 30% 10% 30%;
-    background-color: #a9d9bc;
-    overflow: hidden;
-    /* border: 1px solid red; */
+  font-family: "Permanent Marker", cursive;
+  padding: 10px;
+  margin: 10% 30% 10% 30%;
+  background-color: #a9d9bc;
+  overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .title {
-    text-align: center;
-    font-size: 50px;
-    color: #ffd58a;
-    /* border: 1px solid rgb(0, 255, 128); */
+  text-align: center;
+  font-size: 50px;
+  color: #ffd58a;
+  /* border: 1px solid rgb(0, 255, 128); */
 }
 
 .title:hover {
-    transform: scale(1.03);
-    color: #008A88;
-    transition: 0.5s;
+  transform: scale(1.02);
+  color: #008a88;
+  transition: 0.5s;
 }
 
 .box-area {
-    /* border: 1px solid rgb(38, 0, 255); */
-    text-align: center;
-    height: 100%;
-    width: 100%;
+  /* border: 1px solid rgb(38, 0, 255); */
+  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .box-wrap {
-    display: inline-block;
+  display: inline-block;
 }
 
 .each-box {
-    font-family: 'Permanent Marker', cursive;
-    color: #008A88;
-    text-align: center;
-    margin: 0 -2px 2px 0;
-    padding-bottom: 5px;
-    height: 60px;
-    width: 60px;
-    font-size: 50px;
+  font-family: "Permanent Marker", cursive;
+  color: #008a88;
+  background-color: #e0f1e7;
+  text-align: center;
+  margin: 0 -2px 2px 0;
+  padding-bottom: 5px;
+  height: 60px;
+  width: 60px;
+  font-size: 50px;
 }
 
 .score-area {
-    color: #008A88;
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
+  color: #008a88;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .player1 {
-    display: inline;
+  display: inline;
 }
 
 .player2 {
-    display: inline;
+  display: inline;
 }
 
 .reset-button {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    color: #008A88;
-    display: inline;
-    height: 40px;
-    width: 100px;
-    border: #a9d9bc;
-    background-color: #a9d9bc;
+  font-family: "Permanent Marker", cursive;
+  font-size: 25px;
+  color: #008a88;
+  display: inline;
+  height: 40px;
+  width: 100px;
+  border: #a9d9bc;
+  background-color: #a9d9bc;
 }
 
 .reset-button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .reset-button:hover {
-    transform: scale(1.05);
-    color: #fac872;
+  transform: scale(1.05);
+  color: #fac872;
 }
 
 .selected {
-    color: green;
+  color: green;
 }
 
 @media only screen and (max-width: 1000px) {
-    .title {
-        text-align: center;
-        font-size: 35px;
-        color: #ffd58a;
-    }
+  .title {
+    text-align: center;
+    font-size: 35px;
+    color: #ffd58a;
+  }
 
-    .each-box {
-        text-align: center;
-        margin: 0 -2px 2px 0;
-        padding-bottom: 5px;
-        height: 40px;
-        width: 40px;
-        font-size: 35px;
-    }
+  .each-box {
+    text-align: center;
+    margin: 0 -2px 2px 0;
+    padding-bottom: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 35px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .title {
-        text-align: center;
-        font-size: 25px;
-        color: #ffd58a;
-    }
+  .title {
+    text-align: center;
+    font-size: 25px;
+    color: #ffd58a;
+  }
 
-    .each-box {
-        text-align: center;
-        margin: 0 -2px 2px 0;
-        padding-bottom: 5px;
-        height: 30px;
-        width: 30px;
-        font-size: 25px;
-    }
+  .each-box {
+    text-align: center;
+    margin: 0 -2px 2px 0;
+    padding-bottom: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+  }
 }

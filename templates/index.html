@@ -10,7 +10,6 @@
     <div id="app">
 
         <div class="title">{{title}}</div>
-
         <div class="box-area">
 
             <div class="box-wrap">
@@ -43,9 +42,10 @@
             </div>
 
             <div class="score-area">
-                <div class="player1">Player 1: {{player1Score}} &nbsp~&nbsp</div>
-                <div class="player2">Player 2: {{player2Score}}</div><br>
-
+                <div class="player1">Player 1: <span style="color:#ffd58a">{{player1Score}}</span> &nbsp~&nbsp</div>
+                <div class="player2">Player 2: <span style="color:#ffd58a">{{player2Score}}</span>
+                </div><br>
+                <hr>
                 <div><button @click="clearAll" class="reset-button">Restart</button></div>
             </div>
 
