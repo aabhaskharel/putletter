@@ -6,9 +6,9 @@ new Vue({
       isActive: "",
       player1Score: 10,
       player2Score: 10,
+
       //   COLUMN 1
-      inputs1: [
-        {
+      inputs1: [{
           position: "1",
           value: ""
         },
@@ -30,8 +30,7 @@ new Vue({
         }
       ],
       //   COLUMN 2
-      inputs2: [
-        {
+      inputs2: [{
           position: "21",
           value: ""
         },
@@ -53,8 +52,7 @@ new Vue({
         }
       ],
       //   COLUMN 3
-      inputs3: [
-        {
+      inputs3: [{
           position: "31",
           value: ""
         },
@@ -76,8 +74,7 @@ new Vue({
         }
       ],
       //   COLUMN 4
-      inputs4: [
-        {
+      inputs4: [{
           position: "41",
           value: ""
         },
@@ -99,8 +96,7 @@ new Vue({
         }
       ],
       //   COLUMN 5
-      inputs5: [
-        {
+      inputs5: [{
           position: "51",
           value: ""
         },
@@ -124,7 +120,7 @@ new Vue({
     };
   },
   methods: {
-    onClick: function() {
+    onClick: function () {
       this.clicks++;
       if (this.clicks === 1) {
         console.log("single");
@@ -135,7 +131,7 @@ new Vue({
         this.clicks = 0;
       }
     },
-    clearAll: function() {
+    clearAll: function () {
       this.inputs1.forEach(element => {
         element.value = "";
       });
