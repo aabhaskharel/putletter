@@ -13,20 +13,31 @@ html {
     /* border: 1px solid rgb(0, 255, 128); */
 }
 
+.title:hover {
+    transform: scale(1.03);
+    color: steelblue;
+    transition: 0.5s;
+}
+
 .box-area {
     /* border: 1px solid rgb(38, 0, 255); */
+    text-align: center;
     height: 100%;
     width: 100%;
 }
 
 .box-wrap {
-    padding: 2px;
+    display: inline-block;
 }
 
 .each-box {
     text-align: center;
     padding-bottom: 5px;
-    height: 40px;
-    width: 40px;
-    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+}
+
+.selected {
+    color: green;
 }
