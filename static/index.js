@@ -4,8 +4,8 @@ new Vue({
     return {
       title: "PutLetter",
       isActive: "",
-      player1Score: 0,
-      player2Score: 0,
+      player1Score: 10,
+      player2Score: 10,
       //   COLUMN 1
       inputs1: [
         {
@@ -134,6 +134,25 @@ new Vue({
         this.isActive = false;
         this.clicks = 0;
       }
+    },
+    clearAll: function() {
+      this.inputs1.forEach(element => {
+        element.value = "";
+      });
+      this.inputs2.forEach(element => {
+        element.value = "";
+      });
+      this.inputs3.forEach(element => {
+        element.value = "";
+      });
+      this.inputs4.forEach(element => {
+        element.value = "";
+      });
+      this.inputs5.forEach(element => {
+        element.value = "";
+      });
+      this.player1Score = 0;
+      this.player2Score = 0;
     }
   }
 });
