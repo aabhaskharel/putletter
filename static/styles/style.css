@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Play|Poppins");
+
+html {
+    font-family: "poppins", sans-serif;
+    padding: 10px;
+    margin: 10% 30% 10% 30%;
+    border: 1px solid red;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    /* border: 1px solid rgb(0, 255, 128); */
+}
+
+.box-area {
+    /* border: 1px solid rgb(38, 0, 255); */
+    height: 100%;
+    width: 100%;
+}
+
+.box-wrap {
+    padding: 2px;
+}
+
+.each-box {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+}
