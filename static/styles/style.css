@@ -24,8 +24,9 @@ html {
 }
 
 .each-box {
-    padding: 5px;
-    height: 30px;
-    width: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+    height: 40px;
+    width: 40px;
     font-size: 30px;
 }

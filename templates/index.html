@@ -10,8 +10,8 @@
     <div id="app">
         <div class="title">{{title}}</div>
         <div class="box-area">
-            <div v-for="i in 10" class="box-wrap">
-                <input type="text" class="each-box" v-model="">
+            <div v-for="input in inputs" class="box-wrap">
+                <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
             </div>
         </div>
     </div>
