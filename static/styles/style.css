@@ -39,6 +39,8 @@ html {
 }
 
 .each-box {
+    font-family: 'Permanent Marker', cursive;
+    color: #008A88;
     text-align: center;
     margin: 0 -2px 2px 0;
     padding-bottom: 5px;
@@ -48,7 +50,17 @@ html {
 }
 
 .score-area {
-    color: #ffd58a;
+    color: #008A88;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.player1 {
+    display: inline;
+}
+
+.player2 {
+    display: inline;
 }
 
 .selected {
