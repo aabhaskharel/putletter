@@ -10,8 +10,34 @@
     <div id="app">
         <div class="title">{{title}}</div>
         <div class="box-area">
-            <div v-for="input in inputs" class="box-wrap">
-                <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
+            <div class="box-wrap">
+                <div v-for="input in inputs1">
+                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position"
+                        @click="onClick" v-bind:class="{selected:isActive}">
+                </div>
+            </div>
+
+            <div class="
+                        box-wrap">
+                <div v-for="input in inputs2">
+                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
+                </div>
+            </div>
+
+            <div class="box-wrap">
+                <div v-for="input in inputs3">
+                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
+                </div>
+            </div>
+            <div class="box-wrap">
+                <div v-for="input in inputs4">
+                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
+                </div>
+            </div>
+            <div class="box-wrap">
+                <div v-for="input in inputs5">
+                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
+                </div>
             </div>
         </div>
     </div>
