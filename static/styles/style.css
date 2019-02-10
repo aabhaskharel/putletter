@@ -1,21 +1,29 @@
-@import url("https://fonts.googleapis.com/css?family=Play|Poppins");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+
+/* background-color: #a9d9bc;
+color: #a97c50;
+background-color: #ffd58a;
+background-color: #008A88; */
 
 html {
-    font-family: "poppins", sans-serif;
+    font-family: 'Permanent Marker', cursive;
     padding: 10px;
     margin: 10% 30% 10% 30%;
-    border: 1px solid red;
+    background-color: #a9d9bc;
+    overflow: hidden;
+    /* border: 1px solid red; */
 }
 
 .title {
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    color: #ffd58a;
     /* border: 1px solid rgb(0, 255, 128); */
 }
 
 .title:hover {
     transform: scale(1.03);
-    color: steelblue;
+    color: #008A88;
     transition: 0.5s;
 }
 
@@ -32,12 +40,51 @@ html {
 
 .each-box {
     text-align: center;
+    margin: 0 -2px 2px 0;
     padding-bottom: 5px;
     height: 60px;
     width: 60px;
     font-size: 50px;
 }
 
+.score-area {
+    color: #ffd58a;
+}
+
 .selected {
     color: green;
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        text-align: center;
+        font-size: 35px;
+        color: #ffd58a;
+    }
+
+    .each-box {
+        text-align: center;
+        margin: 0 -2px 2px 0;
+        padding-bottom: 5px;
+        height: 40px;
+        width: 40px;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .title {
+        text-align: center;
+        font-size: 25px;
+        color: #ffd58a;
+    }
+
+    .each-box {
+        text-align: center;
+        margin: 0 -2px 2px 0;
+        padding-bottom: 5px;
+        height: 30px;
+        width: 30px;
+        font-size: 25px;
+    }
 }
