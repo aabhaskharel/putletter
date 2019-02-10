@@ -4,6 +4,8 @@ new Vue({
     return {
       title: "PutLetter",
       isActive: "",
+      player1Score: 0,
+      player2Score: 0,
       //   COLUMN 1
       inputs1: [
         {
