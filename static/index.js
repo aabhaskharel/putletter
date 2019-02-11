@@ -5,20 +5,21 @@ new Vue({
       title: "PutLetter",
 
       isActive: "",
-      currentPlayer: '',
+      currentPlayer: 1,
 
-      player1Score: 10,
-      player2Score: 10,
+      player1Score: 0,
+      player2Score: 0,
 
-      toCheck: '',
+      toCheck: "",
       allWords: {
-        "ant": 1,
-        "bat": 1,
-        "cat": 1
+        ant: 1,
+        bat: 1,
+        cat: 1
       },
 
       //   COLUMN 1
-      inputs1: [{
+      inputs1: [
+        {
           position: "1",
           value: ""
         },
@@ -40,7 +41,8 @@ new Vue({
         }
       ],
       //   COLUMN 2
-      inputs2: [{
+      inputs2: [
+        {
           position: "21",
           value: ""
         },
@@ -62,7 +64,8 @@ new Vue({
         }
       ],
       //   COLUMN 3
-      inputs3: [{
+      inputs3: [
+        {
           position: "31",
           value: ""
         },
@@ -84,7 +87,8 @@ new Vue({
         }
       ],
       //   COLUMN 4
-      inputs4: [{
+      inputs4: [
+        {
           position: "41",
           value: ""
         },
@@ -106,7 +110,8 @@ new Vue({
         }
       ],
       //   COLUMN 5
-      inputs5: [{
+      inputs5: [
+        {
           position: "51",
           value: ""
         },
@@ -130,7 +135,7 @@ new Vue({
     };
   },
   methods: {
-    onClick: function (value) {
+    onClick: function(value) {
       this.clicks++;
       if (this.clicks === 1 && value.length > 0) {
         console.log(value);
@@ -143,15 +148,22 @@ new Vue({
       }
     },
 
-    checkWord: function () {
+    checkWord: function() {
       if (this.allWords[this.toCheck]) {
         console.log("1 Point!");
+        this.currentPlayer == 1
+          ? (this.player1Score += 1)
+          : (this.player2Score += 1);
       } else {
         console.log("Nope!");
       }
+      this.currentPlayer == 1
+        ? (this.currentPlayer += 1)
+        : (this.currentPlayer -= 1);
+      this.toCheck = "";
     },
 
-    clearAll: function () {
+    clearAll: function() {
       this.inputs1.forEach(element => {
         element.value = "";
       });
@@ -169,7 +181,7 @@ new Vue({
       });
       this.player1Score = 0;
       this.player2Score = 0;
-      this.toCheck = '';
+      this.toCheck = "";
     }
   }
 });
