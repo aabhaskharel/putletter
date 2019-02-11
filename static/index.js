@@ -3,7 +3,7 @@ new Vue({
   data() {
     return {
       title: "PutLetter",
-
+      startToggle: true,
       isActive: "",
       currentPlayer: 1,
 
@@ -142,25 +142,32 @@ new Vue({
         // this.isActive = true;
         this.toCheck += value;
       } else {
-        console.log("clear");
         // this.isActive = false;
         this.clicks = 0;
       }
     },
 
-    checkWord: function() {
-      if (this.allWords[this.toCheck]) {
-        console.log("1 Point!");
-        this.currentPlayer == 1
-          ? (this.player1Score += 1)
-          : (this.player2Score += 1);
-      } else {
-        console.log("Nope!");
-      }
+    changePlayer: function() {
       this.currentPlayer == 1
         ? (this.currentPlayer += 1)
         : (this.currentPlayer -= 1);
-      this.toCheck = "";
+    },
+
+    checkWord: function() {
+      if (this.toCheck.length > 0) {
+        if (this.allWords[this.toCheck]) {
+          this.currentPlayer == 1
+            ? (this.player1Score += 1)
+            : (this.player2Score += 1);
+          // this.toCheck = "Correct!";
+        } else {
+          // this.toCheck = "Nope :(";
+        }
+        this.currentPlayer == 1
+          ? (this.currentPlayer += 1)
+          : (this.currentPlayer -= 1);
+        this.toCheck = "";
+      }
     },
 
     clearAll: function() {
