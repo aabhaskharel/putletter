@@ -8,7 +8,7 @@ background-color: #008A88; */
 html {
   font-family: "Permanent Marker", cursive;
   padding: 10px;
-  margin: 10% 30% 10% 30%;
+  margin: 5% 30% 10% 30%;
   background-color: #a9d9bc;
   overflow: hidden;
   /* border: 1px solid red; */
@@ -18,13 +18,23 @@ html {
   text-align: center;
   font-size: 50px;
   color: #ffd58a;
+  text-shadow:
+    -1px -1px 0 #008A88,
+    1px -1px 0 #008A88,
+    -1px 1px 0 #008A88,
+    1px 1px 0 #008A88;
   /* border: 1px solid rgb(0, 255, 128); */
 }
 
 .title:hover {
   transform: scale(1.02);
-  color: #008a88;
+  /* color: #008a88;
   transition: 0.5s;
+  text-shadow:
+    -1px -1px 0 #ffd58a,
+    1px -1px 0 #ffd58a,
+    -1px 1px 0 #ffd58a,
+    1px 1px 0 #ffd58a; */
 }
 
 .box-area {
@@ -41,6 +51,11 @@ html {
 .each-box {
   font-family: "Permanent Marker", cursive;
   color: #008a88;
+  text-shadow:
+    -1px -1px 0 #ffd58a,
+    1px -1px 0 #ffd58a,
+    -1px 1px 0 #ffd58a,
+    1px 1px 0 #ffd58a;
   background-color: #e0f1e7;
   text-align: center;
   margin: 0 -2px 2px 0;
@@ -52,9 +67,24 @@ html {
 
 .score-area {
   color: #008a88;
+  text-shadow:
+    -1px -1px 0 #ffd58a,
+    1px -1px 0 #ffd58a,
+    -1px 1px 0 #ffd58a,
+    1px 1px 0 #ffd58a;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
+}
+
+.score-count {
+  font-size: 25px;
+  color: #ffd58a;
+  text-shadow:
+    -1px -1px 0 #008A88,
+    1px -1px 0 #008A88,
+    -1px 1px 0 #008A88,
+    1px 1px 0 #008A88;
 }
 
 .player1 {
@@ -69,6 +99,11 @@ html {
   font-family: "Permanent Marker", cursive;
   font-size: 25px;
   color: #008a88;
+  text-shadow:
+    -1px -1px 0 #ffd58a,
+    1px -1px 0 #ffd58a,
+    -1px 1px 0 #ffd58a,
+    1px 1px 0 #ffd58a;
   display: inline;
   height: 40px;
   width: 100px;
@@ -83,10 +118,20 @@ html {
 .reset-button:hover {
   transform: scale(1.05);
   color: #fac872;
+  text-shadow:
+    -1px -1px 0 #008A88,
+    1px -1px 0 #008A88,
+    -1px 1px 0 #008A88,
+    1px 1px 0 #008A88;
 }
 
 .selected {
-  color: green;
+  color: #ffd58a;
+  text-shadow:
+    -1px -1px 0 #008A88,
+    1px -1px 0 #008A88,
+    -1px 1px 0 #008A88,
+    1px 1px 0 #008A88;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -94,6 +139,11 @@ html {
     text-align: center;
     font-size: 35px;
     color: #ffd58a;
+    text-shadow:
+      -1px -1px 0 #008A88,
+      1px -1px 0 #008A88,
+      -1px 1px 0 #008A88,
+      1px 1px 0 #008A88;
   }
 
   .each-box {
@@ -111,6 +161,11 @@ html {
     text-align: center;
     font-size: 25px;
     color: #ffd58a;
+    text-shadow:
+      -1px -1px 0 #008A88,
+      1px -1px 0 #008A88,
+      -1px 1px 0 #008A88,
+      1px 1px 0 #008A88;
   }
 
   .each-box {
