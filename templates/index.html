@@ -1,60 +1,92 @@
 <html>
-
-<head>
+  <head>
     <title>PutLetter</title>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="app">
-
-        <div class="title">{{title}}</div>
-        <div class="box-area">
-
-            <div class="box-wrap">
-                <div v-for="input in inputs1">
-                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position"
-                        @click="onClick" v-bind:class="{selected:isActive}">
-                </div>
-            </div>
-
-            <div class="box-wrap">
-                <div v-for="input in inputs2">
-                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
-                </div>
-            </div>
-
-            <div class="box-wrap">
-                <div v-for="input in inputs3">
-                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
-                </div>
-            </div>
-            <div class="box-wrap">
-                <div v-for="input in inputs4">
-                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
-                </div>
-            </div>
-            <div class="box-wrap">
-                <div v-for="input in inputs5">
-                    <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position">
-                </div>
-            </div>
-
-            <div class="score-area">
-                <div class="player1">Player 1: <span style="color:#ffd58a">{{player1Score}}</span> &nbsp~&nbsp</div>
-                <div class="player2">Player 2: <span style="color:#ffd58a">{{player2Score}}</span>
-                </div><br>
-                <hr>
-                <div><button @click="clearAll" class="reset-button">Restart</button></div>
-            </div>
-
+      <div class="title">{{ title }}</div>
+      <div class="box-area">
+        <div class="box-wrap">
+          <div v-for="input in inputs1">
+            <input
+              type="text"
+              maxlength="1"
+              class="each-box"
+              v-model="input.value"
+              value="input.position"
+              @click="onClick"
+              v-bind:class="{selected:isActive}"
+            />
+          </div>
         </div>
 
+        <div class="box-wrap">
+          <div v-for="input in inputs2">
+            <input
+              type="text"
+              maxlength="1"
+              class="each-box"
+              v-model="input.value"
+              value="input.position"
+            />
+          </div>
+        </div>
+
+        <div class="box-wrap">
+          <div v-for="input in inputs3">
+            <input
+              type="text"
+              maxlength="1"
+              class="each-box"
+              v-model="input.value"
+              value="input.position"
+            />
+          </div>
+        </div>
+        <div class="box-wrap">
+          <div v-for="input in inputs4">
+            <input
+              type="text"
+              maxlength="1"
+              class="each-box"
+              v-model="input.value"
+              value="input.position"
+            />
+          </div>
+        </div>
+        <div class="box-wrap">
+          <div v-for="input in inputs5">
+            <input
+              type="text"
+              maxlength="1"
+              class="each-box"
+              v-model="input.value"
+              value="input.position"
+            />
+          </div>
+        </div>
+
+        <div class="score-area">
+          <div class="player1">
+            Player 1:
+            <span class="score-count">{{ player1Score }}</span> &nbsp~&nbsp
+          </div>
+          <div class="player2">
+            Player 2: <span class="score-count">{{ player2Score }}</span>
+          </div>
+          <br />
+          <hr />
+          <div>
+            <button @click="clearAll" class="reset-button">Restart</button>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 
-<script src="/static/index.js"></script>
-<link rel="stylesheet" href="/static/styles/style.css">
-
+  <script src="/static/index.js"></script>
+  <link rel="stylesheet" href="/static/styles/style.css" />
 </html>
