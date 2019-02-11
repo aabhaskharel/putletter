@@ -3,9 +3,19 @@ new Vue({
   data() {
     return {
       title: "PutLetter",
+
       isActive: "",
+      currentPlayer: '',
+
       player1Score: 10,
       player2Score: 10,
+
+      toCheck: '',
+      allWords: {
+        "ant": 1,
+        "bat": 1,
+        "cat": 1
+      },
 
       //   COLUMN 1
       inputs1: [{
@@ -120,17 +130,27 @@ new Vue({
     };
   },
   methods: {
-    onClick: function () {
+    onClick: function (value) {
       this.clicks++;
-      if (this.clicks === 1) {
-        console.log("single");
-        this.isActive = true;
+      if (this.clicks === 1 && value.length > 0) {
+        console.log(value);
+        // this.isActive = true;
+        this.toCheck += value;
       } else {
         console.log("clear");
-        this.isActive = false;
+        // this.isActive = false;
         this.clicks = 0;
       }
     },
+
+    checkWord: function () {
+      if (this.allWords[this.toCheck]) {
+        console.log("1 Point!");
+      } else {
+        console.log("Nope!");
+      }
+    },
+
     clearAll: function () {
       this.inputs1.forEach(element => {
         element.value = "";
@@ -149,6 +169,7 @@ new Vue({
       });
       this.player1Score = 0;
       this.player2Score = 0;
+      this.toCheck = '';
     }
   }
 });
