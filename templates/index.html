@@ -11,69 +11,69 @@
 <body>
     <div id="app">
         <div class="start" v-if="startToggle">
-            <div class="title" style="font-size: 100px">{{ title }}</div>
-            <div class="reset-button" @click="startToggle=false">Play</div>
+            <div class="title color-1" style="font-size: 100px">{{ title }}</div>
+            <div class="reset-button color-2" @click="startToggle=false">Play</div>
         </div>
         <transition name="bounce">
             <div v-if="!startToggle">
 
-                <div class="title">{{ title }}</div>
-                <div class="current-player">
-                    Current Player: <span class="score-count">{{ currentPlayer }}</span>
+                <div class="title color-1">{{ title }}</div>
+                <div class="current-player color-2">
+                    Current Player: <span class="score-count color-1">{{ currentPlayer }}</span>
                 </div>
 
                 <div class="box-area" v-if="!startToggle">
 
                     <div class="box-wrap">
                         <div v-for="input in inputs1">
-                            <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position"
+                            <input type="text" maxlength="1" class="each-box color-2" v-model="input.value" value="input.position"
                                 @click="onClick(input.value)" @change="changePlayer" v-bind:class="{selected:isActive}" />
                         </div>
                     </div>
 
                     <div class="box-wrap">
                         <div v-for="input in inputs2">
-                            <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position"
+                            <input type="text" maxlength="1" class="each-box color-2" v-model="input.value" value="input.position"
                                 @click="onClick(input.value)" @change="changePlayer" v-bind:class="{selected:isActive}" />
                         </div>
                     </div>
 
                     <div class="box-wrap">
                         <div v-for="input in inputs3">
-                            <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position"
+                            <input type="text" maxlength="1" class="each-box color-2" v-model="input.value" value="input.position"
                                 @click="onClick(input.value)" @change="changePlayer" v-bind:class="{selected:isActive}" />
                         </div>
                     </div>
                     <div class="box-wrap">
                         <div v-for="input in inputs4">
-                            <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position"
+                            <input type="text" maxlength="1" class="each-box color-2" v-model="input.value" value="input.position"
                                 @click="onClick(input.value)" @change="changePlayer" v-bind:class="{selected:isActive}" />
                         </div>
                     </div>
                     <div class="box-wrap">
                         <div v-for="input in inputs5">
-                            <input type="text" maxlength="1" class="each-box" v-model="input.value" value="input.position"
+                            <input type="text" maxlength="1" class="each-box color-2" v-model="input.value" value="input.position"
                                 @click="onClick(input.value)" @change="changePlayer" v-bind:class="{selected:isActive}" />
                         </div>
                     </div>
 
-                    <div class="score-area">
+                    <div class="score-area color-2">
                         <div class="player1">
                             Player 1:
-                            <span class="score-count">{{ player1Score }}</span> &nbsp~&nbsp
+                            <span class="score-count color-1">{{ player1Score }}</span> &nbsp~&nbsp
                         </div>
                         <div class="player2">
-                            Player 2: <span class="score-count">{{ player2Score }}</span>
+                            Player 2: <span class="score-count color-1">{{ player2Score }}</span>
                         </div>
                         <br />
                         <hr />
                         Selected Word: <span v-for="each in toCheck">{{ each }}</span>
                         <div>
-                            <button @click="checkWord" class="reset-button">Check</button>&nbsp/&nbsp<button @click="toCheck=''"
-                                class="reset-button">Clear</button>
+                            <button @click="checkWord" class="reset-button color-2">Check</button>&nbsp/&nbsp<button
+                                @click="toCheck=''" class="reset-button color-2">Clear</button>
                         </div>
                         <div>
-                            <button @click="clearAll" class="reset-button">Restart</button>
+                            <button @click="clearAll" class="reset-button color-2">Restart</button>
                         </div>
                     </div>
                 </div>

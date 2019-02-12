@@ -12,6 +12,18 @@ html {
   text-align: center;
 }
 
+.color-1 {
+  color: #ffd58a;
+  text-shadow: -1px -1px 0 #008a88, 1px -1px 0 #008a88, -1px 1px 0 #008a88,
+    1px 1px 0 #008a88;
+}
+
+.color-2 {
+  color: #008a88;
+  text-shadow: -1px -1px 0 #ffd58a, 1px -1px 0 #ffd58a, -1px 1px 0 #ffd58a,
+    1px 1px 0 #ffd58a;
+}
+
 .start {
   margin-top: 30%;
   text-align: center;
@@ -20,38 +32,18 @@ html {
 .title {
   text-align: center;
   font-size: 50px;
-  color: #ffd58a;
-  text-shadow:
-    -1px -1px 0 #008A88,
-    1px -1px 0 #008A88,
-    -1px 1px 0 #008A88,
-    1px 1px 0 #008A88;
   /* border: 1px solid rgb(0, 255, 128); */
 }
 
 .current-player {
   font-size: 20px;
-  color: #008a88;
-  text-shadow:
-    -1px -1px 0 #ffd58a,
-    1px -1px 0 #ffd58a,
-    -1px 1px 0 #ffd58a,
-    1px 1px 0 #ffd58a;
 }
 
 .title:hover {
   transform: scale(1.02);
-  /* color: #008a88;
-  transition: 0.5s;
-  text-shadow:
-    -1px -1px 0 #ffd58a,
-    1px -1px 0 #ffd58a,
-    -1px 1px 0 #ffd58a,
-    1px 1px 0 #ffd58a; */
 }
 
 .box-area {
-  /* border: 1px solid rgb(38, 0, 255); */
   margin-top: 15px;
   text-align: center;
   height: 100%;
@@ -64,12 +56,6 @@ html {
 
 .each-box {
   font-family: "Permanent Marker", cursive;
-  color: #008a88;
-  text-shadow:
-    -1px -1px 0 #ffd58a,
-    1px -1px 0 #ffd58a,
-    -1px 1px 0 #ffd58a,
-    1px 1px 0 #ffd58a;
   background-color: #e0f1e7;
   text-align: center;
   margin: 0 -2px 2px 0;
@@ -80,12 +66,6 @@ html {
 }
 
 .score-area {
-  color: #008a88;
-  text-shadow:
-    -1px -1px 0 #ffd58a,
-    1px -1px 0 #ffd58a,
-    -1px 1px 0 #ffd58a,
-    1px 1px 0 #ffd58a;
   font-size: 20px;
   margin-top: 40px;
   text-align: center;
@@ -93,12 +73,6 @@ html {
 
 .score-count {
   font-size: 25px;
-  color: #ffd58a;
-  text-shadow:
-    -1px -1px 0 #008A88,
-    1px -1px 0 #008A88,
-    -1px 1px 0 #008A88,
-    1px 1px 0 #008A88;
 }
 
 .player1 {
@@ -112,12 +86,6 @@ html {
 .reset-button {
   font-family: "Permanent Marker", cursive;
   font-size: 25px;
-  color: #008a88;
-  text-shadow:
-    -1px -1px 0 #ffd58a,
-    1px -1px 0 #ffd58a,
-    -1px 1px 0 #ffd58a,
-    1px 1px 0 #ffd58a;
   display: inline;
   height: 40px;
   width: 100px;
@@ -132,20 +100,14 @@ html {
 .reset-button:hover {
   transform: scale(1.05);
   color: #fac872;
-  text-shadow:
-    -1px -1px 0 #008A88,
-    1px -1px 0 #008A88,
-    -1px 1px 0 #008A88,
-    1px 1px 0 #008A88;
+  text-shadow: -1px -1px 0 #008a88, 1px -1px 0 #008a88, -1px 1px 0 #008a88,
+    1px 1px 0 #008a88;
 }
 
 .selected {
   color: #ffd58a;
-  text-shadow:
-    -1px -1px 0 #008A88,
-    1px -1px 0 #008A88,
-    -1px 1px 0 #008A88,
-    1px 1px 0 #008A88;
+  text-shadow: -1px -1px 0 #008a88, 1px -1px 0 #008a88, -1px 1px 0 #008a88,
+    1px 1px 0 #008a88;
 }
 
 /* for responsive */
@@ -153,12 +115,6 @@ html {
   .title {
     text-align: center;
     font-size: 35px;
-    color: #ffd58a;
-    text-shadow:
-      -1px -1px 0 #008A88,
-      1px -1px 0 #008A88,
-      -1px 1px 0 #008A88,
-      1px 1px 0 #008A88;
   }
 
   .each-box {
@@ -175,12 +131,6 @@ html {
   .title {
     text-align: center;
     font-size: 25px;
-    color: #ffd58a;
-    text-shadow:
-      -1px -1px 0 #008A88,
-      1px -1px 0 #008A88,
-      -1px 1px 0 #008A88,
-      1px 1px 0 #008A88;
   }
 
   .each-box {
@@ -197,12 +147,6 @@ html {
   .title {
     text-align: center;
     font-size: 20px;
-    color: #ffd58a;
-    text-shadow:
-      -1px -1px 0 #008A88,
-      1px -1px 0 #008A88,
-      -1px 1px 0 #008A88,
-      1px 1px 0 #008A88;
   }
 
   .each-box {
@@ -219,12 +163,6 @@ html {
   .title {
     text-align: center;
     font-size: 15px;
-    color: #ffd58a;
-    text-shadow:
-      -1px -1px 0 #008A88,
-      1px -1px 0 #008A88,
-      -1px 1px 0 #008A88,
-      1px 1px 0 #008A88;
   }
 
   .each-box {
@@ -239,11 +177,11 @@ html {
 
 /* animation */
 .bounce-enter-active {
-  animation: bounce-in .3s;
+  animation: bounce-in 0.3s;
 }
 
 .bounce-leave-active {
-  animation: bounce-in .5s reverse;
+  animation: bounce-in 0.5s reverse;
 }
 
 @keyframes bounce-in {
