@@ -1,8 +1,11 @@
+// const wrds = require("./data.json");
+
 new Vue({
   el: "#app",
   data() {
     return {
       title: "PutLetter",
+      message: "",
       startToggle: true,
       isActive: "",
       currentPlayer: 1,
@@ -11,11 +14,7 @@ new Vue({
       player2Score: 0,
 
       toCheck: "",
-      allWords: {
-        ant: 1,
-        bat: 1,
-        cat: 1
-      },
+      allWords: {},
 
       //   COLUMN 1
       inputs1: [
@@ -136,6 +135,7 @@ new Vue({
   },
   methods: {
     onClick: function(value) {
+      this.message = "";
       this.clicks++;
       if (this.clicks === 1 && value.length > 0) {
         console.log(value);
@@ -148,6 +148,7 @@ new Vue({
     },
 
     changePlayer: function() {
+      this.message = "";
       this.currentPlayer == 1
         ? (this.currentPlayer += 1)
         : (this.currentPlayer -= 1);
@@ -159,9 +160,9 @@ new Vue({
           this.currentPlayer == 1
             ? (this.player1Score += 1)
             : (this.player2Score += 1);
-          // this.toCheck = "Correct!";
+          this.message = "Correct!";
         } else {
-          // this.toCheck = "Nope :(";
+          this.message = "Nope :(";
         }
         this.currentPlayer == 1
           ? (this.currentPlayer += 1)
@@ -171,6 +172,7 @@ new Vue({
     },
 
     clearAll: function() {
+      this.message = "";
       this.inputs1.forEach(element => {
         element.value = "";
       });
